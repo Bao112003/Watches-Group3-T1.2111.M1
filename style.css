@@ -18,8 +18,14 @@ body, html { overflow-x:hidden; }
 
     
 }
+.adjust-policy{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 .change-bg{
     background-color: black;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .policy-item{
     display: flex;
@@ -31,10 +37,11 @@ body, html { overflow-x:hidden; }
     padding-top: 20px;
 }
 .policy-text{
-    width: 45%;
+    width: 55%;
 }
 .policy-container{
    background-color: khaki;
+   padding:80px 0;
 }
 .icon-policy{
     padding-right: 20px;
@@ -58,6 +65,48 @@ body, html { overflow-x:hidden; }
     display: none;
 
 }
+.logo-container{
+   text-align: center;
+   padding-top: 60px;
+   
+}
+.underlogo-text{
+    color: white !important;
+    font-size: 14px;
+    padding-top: 30px;
+}
+.footer-logo-item{
+    color: white !important;
+    display: inline-block;
+    
+}
+.footer-link{
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.footer-link:hover{
+    text-decoration: none;
+    color: lightsalmon;
+}
+.footer-nav-link{
+    text-align: initial;
+}
+.footer-nav-item{
+    padding-bottom: 30px;
+}
+.footer-nav-item:nth-child(1){
+    padding-top: 60px;
+}
+.footer-contact-container{
+    margin-top: 100px;
+}
+.footer-contact-text{
+    display: inline-block;
+    font-size: 10px;
+    color: white;
+    
+}
 .navbar-nav li {
     position: relative;
     line-height: 1.5rem;
@@ -67,6 +116,8 @@ body, html { overflow-x:hidden; }
     text-decoration: none;
     width: 150px;
     
+}.content-container{
+    padding:0 100px;
 }
 .ms-auto{
     margin-left: auto !important;
