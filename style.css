@@ -17,6 +17,21 @@ body, html { overflow-x:hidden; }
     
     
 }
+.navbar-nav ul{
+    position: absolute;
+    display: none;
+
+}
+.navbar-nav li {
+    position: relative;
+    line-height: 1.5rem;
+    float: left;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    
+}
 .ms-auto{
     margin-left: auto !important;
 }
@@ -258,6 +273,45 @@ img{
   }
   
 
-  .dropdown{
-      display: block;
+  
+  .child-items{
+      
+    background-color:hsl(31, 100%, 70%);
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+  .parent-padding{
+    border: 1px solid grey;
+  }
+  .parent-padding:nth-child(1){
+      border-bottom: 0;
+  }
+  .parentitems{
+    background-color:hsl(31, 100%, 70%);
+    
+  }
+  .child-items:nth-child(2){
+      border-bottom: none !important;
+
+  }
+  .child-items:nth-child(1){
+    border-bottom: none !important;
+
+}
+  ul{
+      padding-inline-start: 0px !important;
+  }
+  .navbar-nav ul ul {
+      left: 150px;
+      top: 0px;
+  }
+  li.nav-item{
+      text-align: center;
+  }
+  .parent-padding{
+    background-color:hsl(31, 100%, 70%);
+    
+  }
+  .parent-padding a{
+      color: white;
   }
