@@ -9,13 +9,49 @@ body, html { overflow-x:hidden; }
 }
 .navbar{
     
-    background-color: white;
+    background-color: black;
     border-bottom: 1px solid black;
-    position: sticky !important;
+    position: fixed !important;
     top: 0;
+    width: 100%;
     z-index: 999;
+
     
+}
+.change-bg{
+    background-color: black;
+}
+.policy-item{
+    display: flex;
+    padding-bottom: 20px;
+    margin-left: 100px;
     
+}
+.policy-item:nth-child(1){
+    padding-top: 20px;
+}
+.policy-text{
+    width: 45%;
+}
+.policy-container{
+   background-color: khaki;
+}
+.icon-policy{
+    padding-right: 20px;
+}
+.strong-text{
+    text-transform: uppercase;
+    font-weight: 900;
+
+    font-size: 1.14286rem;
+}
+.span-text{
+    font-size: 12px;
+    text-align:initial;
+}
+.logo{
+    text-transform: uppercase;
+    color: white;
 }
 .navbar-nav ul{
     position: absolute;
@@ -42,10 +78,10 @@ body, html { overflow-x:hidden; }
 }
 .searching-round{
     border-radius: 15px;
-    background-color:blanchedalmond
+    
 }
 .navbar-nav{
-    margin-left: 30px !important;
+    margin-left: auto !important;
 }
 .home-bg{
     background-color:hsl(31, 100%, 70%) ;
@@ -75,7 +111,7 @@ body, html { overflow-x:hidden; }
     position: relative;
     text-align: center;
     padding-top: 2rem;
-    border: 1px solid grey;
+    border: 2px solid rgb(216,216,216);
     transition: .5s;
     overflow-y: hidden;
   transition: .3s;
@@ -97,6 +133,17 @@ img{
     height: auto;
 }
 .feature-text::before{
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 67px;
+    height: 1px;
+    background-color:hsl(31, 100%, 70%);
+}
+.customer-saying::before{
     content: '';
     position: absolute;
     top: -1rem;
@@ -215,8 +262,10 @@ img{
     font-weight: 300;
 }
 .customer-saying{
+    
     font-size: 2.48832rem !important;
     line-height: 1.25 !important;
+    position: relative;
 }
 .swiper-container{
         background: #eee;
@@ -314,4 +363,18 @@ img{
   }
   .parent-padding a{
       color: white;
+  }
+  .customer-respone{
+      padding-top: 50px;
+  }
+  .nav-link{
+      background-color: black;
+      color: white !important;
+      border-radius: 10px;
+      border: 1px solid white;
+      transition: .5s;
+  }
+  .nav-link:hover{
+    background-color: coral;
+    color: black;
   }
