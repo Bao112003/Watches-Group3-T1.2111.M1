@@ -10,28 +10,100 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179085454-1"></script>
     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script type="text/javascript" src="./app.js"></script> 
+    <script type="text/javascript" src="./app.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-    .about{
-        margin-top: 150px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .addsome{
-        margin-bottom: 50px;
-    }
-    .amazing1{
-        padding-top: 40px;
-        padding-bottom: 20px;
+    .contact-section{
+        min-height: 100vh;
+        background:url('./img/bg-contact.jpeg') no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
         width: 100%;
-        background-color: #f5f5f5;
     }
+    .contact-info{
+        color: #fff;
+        max-width: 500px;
+        line-height: 65px;
+        padding-left: 50px;
+        font-size: 18px;
+
+    }
+    .contact-info i{
+        margin-right: 20px;
+        font-size:25px;
+    }
+    .contact-form{
+        max-width: 700px;
+        margin-right: 50px;
+
+    }
+    .contact-info, .contact-form{
+        flex: 1;
+    }
+    .contact-form h2{
+        color: #fff;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    .contact-form .text-box{
+        background: #000;
+        color: #fff;
+        border: none;
+        width: calc(50% - 10px);
+        height: 50px;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0,0 , 0, 0.1);
+        margin-bottom: 20px;
+        opacity: 0.9;
+
+    }
+    .contact-form .text-box:first-child{
+        margin-right: 15px;
+
+    }
+    .contact-form textarea{
+        background: #000;
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        min-height: 200px;
+
+    }
+    .contact-form .send-btn{
+        /* float: right; */
+        background-color: #2E94E3;
+        color: #fff;
+        border: none;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: background ;
+    }
+    .contact-form .send-btn:hover{
+        background: #0582E3;
+
+    }
+   
 </style>
 <body>
-    <!--header nav-->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+     <!--header nav-->
+     <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
         <div class="container-fluid">
           <a href="index.html">
             <!-- <img src="./img/download__3_-removebg-preview.png" alt="slected.png" width="150" height="80"
@@ -47,14 +119,14 @@
                 <a class="nav-link active " aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Product</a>
+                <a href="./product.html" class="nav-link">Product</a>
                 <ul class="dropdown">
                   <li class="parent-padding">
                     <a href="">Women Watches</a>
                     <ul class="parent-items">
                       <li class="child-items"><a href="">Rolex</a></li>
                       <li class="child-items"><a href="">Gucci</a></li>
-                      <li class="child-items"><a href="">Rolex</a></li>
+                      <li class="child-items"><a href="">IWC</a></li>
                     </ul>
                   </li>
                   
@@ -63,7 +135,7 @@
                     <ul class="parent-items">
                       <li class="child-items"><a href="">Rolex</a></li>
                       <li class="child-items"><a href="">Gucci</a></li>
-                      <li class="child-items"><a href="">Rolex</a></li>
+                      <li class="child-items"><a href="">IWC</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -86,65 +158,26 @@
           </div>
         </div>
       </nav>
-      <!--about us-->
-      <div class="about">
-          <h1>ABOUT US</h1>
-          <h6 class="addsome">Add Some Description</h6>
-          <div class="container">
-              <div class="row">
-                <div class="col-sm-6">
-                    <img src="./img/download__2_-removebg-preview.png" alt="">
-                </div>
-                <div class="col-sm-6">
-                      <p>Rolex is a symbol of luxury, power and prestige. Founded by hans wilsdorf in 1905, it became the world' s most famous clock brand.
-                           The big của rolex đến từ was born in the vỏ' s shell in the mid - 1920s. Because of the revolutionary nature, it became the first anti 
-                           - water clock in the world. Nearly a century later, the design of the rolex oyster was almost unchanged. Improvements to small details are
-                            often not khác when chỉ looks through. The điều watches become classic, making it easy to realize and become được collectors. Rolex has led 
-                            the luxury clock world for over 100 years. 
-                          The clock from this independent swiss manufacturer means efficiency, prestige and accuracy.</p>
-                </div>
-              </div>
+      <!--contact-->
+      <div class="contact-section">
+          <div class="contact-info">
+              <div><i class="fa-solid fa-location-pin"></i>Address,city,country</div>
+              <div><i class="fa-solid fa-envelope"></i>contact@email.com</div>
+              <div><i class="fa-solid fa-phone"></i>+00 0000 000 000</div>
+              <div><i class="fa-solid fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
           </div>
-          <div class="container">
-            <div class="row">
-              
-              <div class="col-sm-6">
-                    <p>
-                        Guccio Gucci, son of an Italian trader founded the House of Gucci in Florence in 1906.
-                         Guccio, an extraordinary craftsman, started selling luxury goods in the 1920s. 
-                         In 1938, Gucci opened a boutique in Rome. After Guccio's death in 1953, his son,
-                          Aldo expanded the company by opening more stores. In 1953, New York got its first Gucci store 
-                          and by the late '60s, more such stores were launched in London, Paris and Tokyo. Gucci continued 
-                          to be one of the leading luxury brands until the late '70s.
-                         After that a string of devastating business decisions led the company to the brink of bankruptcy.</p>
-              </div>
-              <div class="col-sm-6">
-                <img src="./img/download-removebg-preview (1).png" alt="">
-            </div>
-            </div>
-            
-        </div>
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                  <img src="./img/download-removebg-preview.png" alt="">
-              </div>
-              <div class="col-sm-6">
-                    <p>Informed by its passion for innovation and technical inventiveness, Swiss watch 
-                        manufacturers IWC Schaffhausen has established an international reputation. 
-                        Since 1868, the brand has been creating flawless timepieces that combine precision 
-                        engineering with sophisticated design. 
-                        For more advice and inspiration, visit The Fine Jewelry and Watch Suite.</p>
-              </div>
-            </div>
-        </div>
-        <div class="amazing1"> 
-            <h6>We work with</h6>
-            <h2>Amazing Services</h2>
-        </div>
+          <div class="contact-form">
+              <h2>Contact Us</h2>
+              <form action="" class="contact" method="post">
+                  <input type="text" name="name" id="name" class="text-box" placeholder="Your name" required>
+                  <input type="email" name="email" id="email" class="text-box" placeholder="Your email" required>
+                  <textarea name="message" id="textarea"  rows="5" placeholder="your message" required></textarea>
+                  <input type="submit" value="Send" name="submit" class="send-btn" onclick="bamnut()">
+              </form>
+          </div>
       </div>
-      <!--footer-->
-      <div class="footer">
+       <!--footer-->
+       <div class="footer">
         <div class="container-fluid">
           <div class="row"> 
             <div class="col-7 change-bg">
@@ -283,5 +316,31 @@
         </div>
      </div>
     </div>
+    <script>
+      var fields ={};
+      document.addEventListener("DOmContentLoaded",function(){
+        fields.name = document.getElementById('name');
+        fields.email= document.getElementById('email');
+        fields.textarea = document.getElementById('textarea');
+      });
+      function isNotEmply(value){
+        if(value ==null || typeof value == 'undefined' ) return false;
+        return (value.length >0);
+      }
+      function bamnut(){
+        var x;
+       var r =confirm("send successful");
+        if (r==true)
+          {
+          x="você pressionou OK!";
+          }
+        else
+          {
+          x="Você pressionou Cancelar!";
+          }
+        document.getElementById("demo").innerHTML=x;
+      }
+     
+    </script>
 </body>
 </html>
