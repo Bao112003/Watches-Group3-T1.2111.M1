@@ -10,141 +10,180 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179085454-1"></script>
     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script type="text/javascript" src="./app.js"></script> 
+    <script type="text/javascript" src="./app.js"></script>
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-    .about{
-        margin-top: 150px;
-        text-align: center;
-        margin-bottom: 50px;
+    .feature{
+      margin-top: 130px;
     }
-    .addsome{
-        margin-bottom: 50px;
-    }
-    .amazing1{
-        padding-top: 40px;
-        padding-bottom: 20px;
-        width: 100%;
-        background-color: #f5f5f5;
+    .iwc1{
+      margin-bottom: 70px;
     }
 </style>
 <body>
-    <!--header nav-->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
-        <div class="container-fluid">
-          <a href="index.html">
-            <!-- <img src="./img/download__3_-removebg-preview.png" alt="slected.png" width="150" height="80"
-            class="d-inline-block align-text-top "> -->
-            <div class="logo">
-                Prestige Limited
-            </div>
-          </a>
-          
-          <div class="collapse navbar-collapse "  id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link active " aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="./login.html" class="nav-link">Product</a>
-                <ul class="dropdown">
-                  <li class="parent-padding">
-                    <a href="">Women Watches</a>
-                    <ul class="parent-items">
-                      <li class="child-items"><a href="">Rolex</a></li>
-                      <li class="child-items"><a href="">Gucci</a></li>
-                      <li class="child-items"><a href="">Rolex</a></li>
+        <!--header nav-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+            <div class="container-fluid">
+              <a href="index.html">
+                <!-- <img src="./img/download__3_-removebg-preview.png" alt="slected.png" width="150" height="80"
+                class="d-inline-block align-text-top "> -->
+                <div class="logo">
+                    Prestige Limited
+                </div>
+              </a>
+              
+              <div class="collapse navbar-collapse "  id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item ">
+                    <a class="nav-link active " aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./product.html" class="nav-link">Product</a>
+                    <ul class="dropdown">
+                      <li class="parent-padding">
+                        <a href="">Women Watches</a>
+                        <ul class="parent-items">
+                          <li class="child-items"><a href="">Rolex</a></li>
+                          <li class="child-items"><a href="">Gucci</a></li>
+                          <li class="child-items"><a href="">IWC</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="parent-padding">
+                        <a href="">Men Watches</a>
+                        <ul class="parent-items">
+                          <li class="child-items"><a href="">Rolex</a></li>
+                          <li class="child-items"><a href="">Gucci</a></li>
+                          <li class="child-items"><a href="">IWC</a></li>
+                        </ul>
+                      </li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
                   </li>
                   
-                  <li class="parent-padding">
-                    <a href="">Men Watches</a>
-                    <ul class="parent-items">
-                      <li class="child-items"><a href="">Rolex</a></li>
-                      <li class="child-items"><a href="">Gucci</a></li>
-                      <li class="child-items"><a href="">Rolex</a></li>
-                    </ul>
-                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./login.html">Login</a>
-              </li>
-              
-            </ul>
-            <div class="nav-item searching-bar ms-auto">
-                <input type="text" class="searching-round" placeholder="Search">
+                <div class="nav-item searching-bar ms-auto">
+                    <input type="text" class="searching-round" placeholder="Search">
+                </div>
+                <a href=""><div class="fas fa-shopping-cart " style="color: white;" ></div></a>
+              </div>
             </div>
-            <a href=""><div class="fas fa-shopping-cart " style="color: white;" ></div></a>
-          </div>
-        </div>
-      </nav>
-      <!--about us-->
-      <div class="about">
-          <h1>ABOUT US</h1>
-          <h6 class="addsome">Add Some Description</h6>
-          <div class="container">
+          </nav>
+          <!--card-->
+          <div class="feature">
+            <div class="container">
+              <div class="feature-text">ROLEX</div>
               <div class="row">
-                <div class="col-sm-6">
-                    <img src="./img/download__2_-removebg-preview.png" alt="">
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/product1.png" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
                 </div>
-                <div class="col-sm-6">
-                      <p>Rolex is a symbol of luxury, power and prestige. Founded by hans wilsdorf in 1905, it became the world' s most famous clock brand.
-                           The big của rolex đến từ was born in the vỏ' s shell in the mid - 1920s. Because of the revolutionary nature, it became the first anti 
-                           - water clock in the world. Nearly a century later, the design of the rolex oyster was almost unchanged. Improvements to small details are
-                            often not khác when chỉ looks through. The điều watches become classic, making it easy to realize and become được collectors. Rolex has led 
-                            the luxury clock world for over 100 years. 
-                          The clock from this independent swiss manufacturer means efficiency, prestige and accuracy.</p>
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/california-watch.png" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/mens-submariner-18kt-yellow-gold-rolex-oyster-blue-dial-watch-rolex-rlx126618lbblso_1.jpg" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
                 </div>
               </div>
+            </div>
           </div>
-          <div class="container">
-            <div class="row">
-              
-              <div class="col-sm-6">
-                    <p>
-                        Guccio Gucci, son of an Italian trader founded the House of Gucci in Florence in 1906.
-                         Guccio, an extraordinary craftsman, started selling luxury goods in the 1920s. 
-                         In 1938, Gucci opened a boutique in Rome. After Guccio's death in 1953, his son,
-                          Aldo expanded the company by opening more stores. In 1953, New York got its first Gucci store 
-                          and by the late '60s, more such stores were launched in London, Paris and Tokyo. Gucci continued 
-                          to be one of the leading luxury brands until the late '70s.
-                         After that a string of devastating business decisions led the company to the brink of bankruptcy.</p>
+          <div class="feature iwc1">
+            <div class="container">
+              <div class="feature-text">GUCCI</div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/product1.png" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/california-watch.png" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/mens-submariner-18kt-yellow-gold-rolex-oyster-blue-dial-watch-rolex-rlx126618lbblso_1.jpg" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
-              <div class="col-sm-6">
-                <img src="./img/download-removebg-preview (1).png" alt="">
             </div>
-            </div>
-            
-        </div>
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                  <img src="./img/download-removebg-preview.png" alt="">
+          </div>
+          <div class="feature iwc1">
+            <div class="container">
+              <div class="feature-text">IWC</div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/product1.png" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/california-watch.png" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="feature-card">
+                    <span class="feature-tag">SALE</span>
+                    <img src="./img/mens-submariner-18kt-yellow-gold-rolex-oyster-blue-dial-watch-rolex-rlx126618lbblso_1.jpg" alt="" class="feature-img">
+                    <div class="feature-info">JAZZMASTER</div>
+                    <div class="price-home">1234</div>
+                    <button class="btn btn-feature">ADD TO CART</button>
+                  </div>
+                </div>
               </div>
-              <div class="col-sm-6">
-                    <p>Informed by its passion for innovation and technical inventiveness, Swiss watch 
-                        manufacturers IWC Schaffhausen has established an international reputation. 
-                        Since 1868, the brand has been creating flawless timepieces that combine precision 
-                        engineering with sophisticated design. 
-                        For more advice and inspiration, visit The Fine Jewelry and Watch Suite.</p>
-              </div>
             </div>
-        </div>
-        <div class="amazing1"> 
-            <h6>We work with</h6>
-            <h2>Amazing Services</h2>
-        </div>
-      </div>
-      <!--footer-->
-      <div class="footer">
+          </div>
+       <!--footer-->
+       <div class="footer">
         <div class="container-fluid">
           <div class="row"> 
             <div class="col-7 change-bg">
