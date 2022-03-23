@@ -119,9 +119,18 @@
           <div class="nav-item searching-bar ms-auto">
             <input type="text" class="searching-round" placeholder="Search" />
           </div>
-          <a href="../shopcard.html"
-            ><div class="fas fa-shopping-cart" style="color: white"></div
-          ></a>
+          <span class="fas fa-shopping-cart my-cart-icon" id="cart-icon" style="color: white"></span>
+          <div class="cart">
+            <div class="cart-title">Your Cart</div>
+            <div class="cart-content">
+            </div>
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+            <button type="button" class="btn-buy">Buy Now</button>
+            <i class="fa-solid fa-xmark" id="close-cart" ></i>
+            </div>
+          </div> 
         </div>
       </div>
     </nav>
@@ -147,10 +156,10 @@
             </div>
             <div class="col-lg-5 col-md-12 col-12">
                 <h6>Home/watches rolex</h6>
-                <h3>Rolex Oyster Perpetual Day-Date 36mm</h3>
-                <h2>$45</h2>
+                <div class="feature-info">Rolex Oyster Perpetual Day-Date 36mm</div>
+                <div class="price-home">55</div>
                 <input type="number" name="number" id="">
-                <button class="buy-btn">Add to Card</button>
+                <button class="buy-btn add-cart" data-id="4">Add to Card</button>
                 <h4 class="mt-5 mb-5">Product</h4>
                 <span>Rolex perpetual day' s day - date 36mm. Initially, the clock was created to easily spin bezel and the shell to ensure the maximum water resistance. After that, design is like a trench in the back, which is firmly embedded in the shell that enhances the greatest waterproofing of the water. 
                   Since then, track design has become a very distinguished detail in the rolex brand style. So, this clock also inherited the high aesthetic value, and how much of it had to be admired.</span>
@@ -313,5 +322,24 @@
           MainImg.src = smallimg[3].src;
       }
   </script>
+   <script src="../addcart.js"></script>
+   <script>
+   var swiper = new Swiper(".mySwiper", {
+     spaceBetween: 30,
+     centeredSlides: true,
+     autoplay: {
+       delay: 5500,
+       disableOnInteraction: false,
+     },
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+ </script>
   </body>
 </html>

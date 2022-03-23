@@ -119,9 +119,18 @@
           <div class="nav-item searching-bar ms-auto">
             <input type="text" class="searching-round" placeholder="Search" />
           </div>
-          <a href="../shopcard.html"
-            ><div class="fas fa-shopping-cart" style="color: white"></div
-          ></a>
+          <span class="fas fa-shopping-cart my-cart-icon" id="cart-icon" style="color: white"></span>
+                      <div class="cart">
+                        <div class="cart-title">Your Cart</div>
+                        <div class="cart-content">
+                        </div>
+                        <div class="total">
+                          <div class="total-title">Total</div>
+                          <div class="total-price">$0</div>
+                        <button type="button" class="btn-buy">Buy Now</button>
+                        <i class="fa-solid fa-xmark" id="close-cart" ></i>
+                        </div>
+                      </div> 
         </div>
       </div>
     </nav>
@@ -313,5 +322,24 @@
           MainImg.src = smallimg[3].src;
       }
   </script>
+  <script src="../addcart.js"></script>
+  <script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
   </body>
 </html>
