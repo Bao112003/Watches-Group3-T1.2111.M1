@@ -292,7 +292,7 @@ form .pass-txt{
                             <div class="error error-txt">Password can't be blank</div>
                           </div>
                           <div class="pass-txt"><a href="#">Forgot password?</a></div>
-                          <input type="submit" value="Login">
+                           <input type="submit" onclick="newDoc()" value="Login">
                         </form>
                         <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
                       </div>
@@ -500,9 +500,13 @@ form.onsubmit = (e)=>{
   }
   //if eField and pField doesn't contains error class that mean user filled details properly
   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
-    window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
+    window.location.assign("https://avatarswd0301.github.io/project1-aptech.github.io/index.html"); //redirecting user to the specified url which is inside action attribute of form tag
+    
   }
 }
+// function newDoc() {
+//   window.location.assign("https://www.w3schools.com")
+// }
   </script>
   <script src="./addcart.js"></script>
   <script>
