@@ -15,11 +15,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
+  #myItems{
+    margin-top:130px;
+    margin-bottom:130px
+  }
+
     .feature{
-      margin-top: 130px;
+      margin-top: 30px;
     }
     .iwc1{
-      margin-bottom: 70px;
+      margin-bottom: 30px;
     }
 </style>
 <body>
@@ -73,7 +78,7 @@
                   
                 </ul>
                 <div class="nav-item searching-bar ms-auto">
-                    <input type="text" class="searching-round" placeholder="Search">
+                    <input type="text" onkeyup="myFunction()" id="myFilter" class="searching-round" placeholder="Search">
                 </div>
                 <span class="fas fa-shopping-cart my-cart-icon" id="cart-icon" style="color: white"></span>
                       <div class="cart">
@@ -91,10 +96,11 @@
             </div>
           </nav>
           <!--card-->
+          <div id="myItems">
           <div class="feature">
             <div class="container">
               <div class="feature-text">ROLEX</div>
-              <div class="row">
+              <div class="row" >
                 <div class="col-4">
                   <div class="feature-card">
                     <span class="feature-tag">SALE</span>
@@ -129,7 +135,7 @@
             </div>
             <div class="feature">
               <div class="container">
-                <div class="row">
+                <div class="row" >
                   <div class="col-4">
                     <div class="feature-card">
                       <span class="feature-tag">SALE</span>
@@ -166,7 +172,7 @@
           </div>
           <div class="feature">
             <div class="container">
-              <div class="row">
+              <div class="row" >
                 <div class="col-4">
                   <div class="feature-card">
                     <span class="feature-tag">SALE</span>
@@ -200,11 +206,11 @@
               </div>
             </div>
           </div>
-        </div>
+        
           <div class="feature ">
             <div class="container">
               <div class="feature-text">GUCCI</div>
-              <div class="row">
+              <div class="row" >
                 <div class="col-4">
                   <div class="feature-card">
                     <span class="feature-tag">SALE</span>
@@ -276,7 +282,7 @@
           </div>
           <div class="feature ">
             <div class="container">
-              <div class="row">
+              <div class="row" >
                 <div class="col-4">
                   <div class="feature-card">
                     <span class="feature-tag">SALE</span>
@@ -313,7 +319,7 @@
           <div class="feature ">
             <div class="container">
               <div class="feature-text">IWC</div>
-              <div class="row">
+              <div class="row" >
                 <div class="col-4">
                   <div class="feature-card">
                     <span class="feature-tag">SALE</span>
@@ -349,7 +355,7 @@
           </div>
           <div class="feature ">
             <div class="container">
-              <div class="row">
+              <div class="row" >
                 <div class="col-4">
                   <div class="feature-card">
                     <span class="feature-tag">SALE</span>
@@ -385,7 +391,7 @@
           </div>
           <div class="feature iwc1">
             <div class="container">
-              <div class="row">
+              <div class="row" >
                 <div class="col-4">
                   <div class="feature-card">
                     <span class="feature-tag">SALE</span>
@@ -419,6 +425,7 @@
               </div>
             </div>
           </div>
+        </div>
        <!--footer-->
        <div class="footer">
         <div class="container-fluid">
@@ -578,6 +585,24 @@
       prevEl: ".swiper-button-prev",
     },
   });
+  function myFunction() {
+    var input, filter, cards, cardContainer, title, i;
+    input = document.getElementById("myFilter");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("myItems");
+    cards = cardContainer.getElementsByClassName("row");
+    cards = cardContainer.getElementsByClassName("feature-card");
+    cards = cardContainer.getElementsByClassName("col-4");
+  
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".feature-info ");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
 </script>
 </body>
 
