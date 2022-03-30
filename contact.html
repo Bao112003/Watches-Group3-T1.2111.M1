@@ -179,14 +179,51 @@
               <div><i class="fa-solid fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
           </div>
           <div class="contact-form">
-              <h2>Contact Us</h2>
-              <form action="" class="contact" method="post">
-                  <input type="text" name="name" id="name" class="text-box" placeholder="Your name" required>
-                  <input type="email" name="email" id="email" class="text-box" placeholder="Your email" required>
-                  <textarea name="message" id="textarea"  rows="5" placeholder="your message" required></textarea>
-                  <input type="submit" value="Send" name="submit" class="send-btn" onclick="bamnut()">
-                  <input type="reset" value="reset" class="send-btn">
-              </form>
+              <div class="row">
+                <div class="col-md-12 col-md-offset-3" id="form_container">
+                    <h2>Contact Us</h2>
+                    
+                    <form role="form" method="post" id="reused_form">
+            
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="message">
+                                    Message:</label>
+                                <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name">
+                                    Your Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email">
+                                    Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+            
+            
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right" >Send →</button>
+                            </div>
+                        </div>
+            
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Posted your message successfully!</h3>
+                    </div>
+                    <div id="error_message"
+                            style="width:100%; height:100%; display:none; ">
+                                <h3>Error</h3>
+                                Sorry there was an error sending your form.
+            
+                    </div>
+                </div>
+            </div>
           </div>
       </div>
        <!--footer-->
@@ -330,30 +367,60 @@
      </div>
     </div>
     <script>
-      var fields ={};
-      document.addEventListener("DOmContentLoaded",function(){
-        fields.name = document.getElementById('name');
-        fields.email= document.getElementById('email');
-        fields.textarea = document.getElementById('textarea');
-      });
-      function isNotEmply(value){
-        if(value ==null || typeof value == 'undefined' ) return false;
-        return (value.length >0);
-      }
-      function bamnut(){
-        var x;
-       var r =confirm("send successful");
-        if (r==true)
-          {
-          x="você pressionou OK!";
-          }
+      
+      $(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
         else
-          {
-          x="Você pressionou Cancelar!";
-          }
-        document.getElementById("demo").innerHTML=x;
-      }
-     
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+          alert("Successful");
+            window.location.assign('https://avatarswd0301.github.io/project1-aptech.github.io/index.html');
+            
+        });
+
+      });
+});
+</script>
     </script>
     <script src="./addcart.js"></script>
     <script>
